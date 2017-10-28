@@ -5,9 +5,7 @@
     <classes>
       <class name="script.testCase1">
         <methods>
-          <include name="selectingRing"/>
-          <include name="precondition"/>
-          <include name="postcondition"/>
+          <include name="wishlistProductVerification"/>
         </methods>
       </class> <!-- script.testCase1 -->
     </classes>

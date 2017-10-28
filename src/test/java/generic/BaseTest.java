@@ -2,6 +2,7 @@ package generic;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.List;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -61,6 +62,27 @@ public static WebDriver driver;
 			 }
 			 
 		 }
+		 
+	 }
+	 
+	 public static void addingProduct(String first , List<WebElement> second)
+	 {
+		 for(WebElement wb : second)
+		 {
+			 if(first.contains(wb.getText()))
+			 {
+				 Reporter.log("Product got added successfully:pass" , true);
+				 
+			 }
+			
+			
+		 }
+		 
+		Reporter.log("product not added:fail" , true);
+		System.exit(0);
+		 
+		 
+			
 		 
 	 }
 }

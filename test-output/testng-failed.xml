@@ -1,15 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-  <test name="Default test(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <parameter name="browser" value="chrome"/>
+  <listeners>
+    <listener class-name="generic.Listeners"/>
+  </listeners>
+  <test name="Test1(failed)">
+    <parameter name="browser" value="chrome"/>
     <classes>
       <class name="script.testCase1">
         <methods>
-          <include name="selectingRing"/>
+          <include name="wishlistProductVerification"/>
           <include name="precondition"/>
-          <include name="postcondition"/>
         </methods>
       </class> <!-- script.testCase1 -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- Test1(failed) -->
+</suite> <!-- Failed suite [Suite] -->

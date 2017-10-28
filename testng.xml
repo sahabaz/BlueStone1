@@ -4,7 +4,19 @@
 <listeners>
 	<listener class-name="generic.Listeners"/>
 </listeners>
-  <test name="Test">
+   <test name="Test1">
+  	<parameter name="browser" value="chrome"/>
+  	<parameter name="nodeurl" value="http://169.254.134.220:4444/wd/hub/"/>
+  	<parameter name="appurl" value="http://www.google.co.in/"/>
+    <classes>
+      <class name="script.testCase1"/>
+    </classes>
+  </test>  
+  
+  <test name="Test1">
+  	<parameter name="browser" value="firefox"/>
+  	<parameter name="nodeurl" value="http://169.254.134.220:4444/wd/hub/"/>
+  	<parameter name="appurl" value="http://www.google.co.in/"/>
     <classes>
       <class name="script.testCase1"/>
     </classes>

@@ -222,7 +222,65 @@ public class HomePage extends BaseTest
 		return sortByMetal;
 	}
 	
-	public void logIn() throws InterruptedException, EncryptedDocumentException, InvalidFormatException, IOException
+//	---------------------------------------------
+	
+	@FindBy(xpath="//span[.='Pendants ']")
+	private WebElement pendentsLink;
+	
+	public WebElement pendentsLink()
+	{
+		return pendentsLink;
+	}
+	
+	@FindBy(xpath="//span[.=' Alphabet ']")
+	private WebElement alphabetsLink;
+	
+	public WebElement alphabetsLink()
+	{
+		return alphabetsLink;
+	}
+	
+	@FindBy(xpath="//a[@class='wishlist no-wishlist outline']")
+	private WebElement addToWishlist;
+	
+	public WebElement addToWishlist()
+	{
+		return addToWishlist;
+	}
+	
+	@FindBy(xpath=" (//a[@id='pid_2141'])[2]/../../..")
+	private WebElement wishlistProduct;
+	
+	public WebElement wishlistProduct()
+	{
+		return wishlistProduct;
+	}
+	
+	@FindBy(xpath="//h1[.='The Liham S Pendant']")
+	private WebElement wishlistProductDescriptn;
+	
+	public WebElement wishlistProductDescriptn()
+	{
+		return wishlistProductDescriptn;
+	}
+	
+	@FindBy(xpath="//a[@class='cart-links']")
+	private WebElement wishlist;
+	
+	public WebElement wishlist()
+	{
+		return wishlist;
+	}
+	
+	@FindBy(xpath="//div[@class='title']/a")
+	private List<WebElement> wishlistproductverify;
+	
+	public List<WebElement> wishlistproductverify()
+	{
+		return wishlistproductverify;
+	}
+	
+	public void logIn() throws InterruptedException, EncryptedDocumentException, InvalidFormatException, IOException 
 	{
 		loginLink().click();
 		Thread.sleep(1000);
